@@ -8,6 +8,7 @@ import { calculateWinner } from './helpers';
 import './styles/root.scss';
 
 const NEW_GAME = [{ board: Array(9).fill(null), isXNext: true }];
+
 const App = () => {
   const [history, setHistory] = useState(NEW_GAME);
   const [currentMove, setCurrentMove] = useState(0);
@@ -44,7 +45,7 @@ const App = () => {
   return (
     <div className="app">
       <h1>
-        TIC <span className="text-green">TAC</span> TOE
+        X <span className="text-green">O</span>
       </h1>
       <StatusMessage winner={winner} current={current} />
       <Board
@@ -59,7 +60,9 @@ const App = () => {
       >
         Start New Game
       </button>
-      <h2 style={{ fontWeight: 'normal' }}>Current game history</h2>
+      <h2 style={{ fontWeight: 'normal', marginTop: '100px' }}>
+        Current game history
+      </h2>
       <History history={history} moveTo={moveTo} currentMove={currentMove} />
       <div className="bg-balls" />
     </div>

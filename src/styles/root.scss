@@ -1,10 +1,12 @@
-$green: #12e177;
-$orange: #ffc72a;
-$blue: #4c43d4;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$green: #ff6e40;
+$orange: #b3b3b3;
+$blue: #1e3d59;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: $blue;
+
   color: #fff;
   padding: 0;
   margin: 0;
@@ -18,12 +20,16 @@ button {
     cursor: pointer;
   }
 }
+h1 {
+  font-size: 60px;
+}
 
 .app {
   font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 100;
 }
 
 .text-green {
@@ -100,8 +106,8 @@ button {
       border-bottom: none;
     }
     .square {
-      width: 80px;
-      height: 80px;
+      width: 120px;
+      height: 120px;
       border-right: 2px solid #fff;
       font-size: 2.5rem;
       padding: 0;
