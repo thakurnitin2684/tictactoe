@@ -9,7 +9,7 @@ tic tac toe game made with react.js
 
 ## Overview
   - React
-  - CSS
+  - SCSS
   - Javascript 
 
 
